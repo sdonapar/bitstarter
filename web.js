@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   var string = buf.toString('utf8');
   response.send(string);
 });
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
